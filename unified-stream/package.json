@@ -1,0 +1,107 @@
+{
+  "_from": "unified-stream",
+  "_id": "unified-stream@1.0.4",
+  "_inBundle": false,
+  "_integrity": "sha512-00yTNP32NnqdhOt4a8k0Q8bTsG29+n5C2T7vQrmw7orHtPdhq84jPVbYtIxHHczVMA5bOOZpRjvy8SOFqzB/+A==",
+  "_location": "/unified-stream",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "unified-stream",
+    "name": "unified-stream",
+    "escapedName": "unified-stream",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/unified-stream/-/unified-stream-1.0.4.tgz",
+  "_shasum": "f0beffe1a8d7f3f9772e549828e5a6bd7474bab3",
+  "_spec": "unified-stream",
+  "_where": "/Users/sitepoint/Desktop/Unitest",
+  "author": {
+    "name": "Titus Wormer",
+    "email": "tituswormer@gmail.com",
+    "url": "https://wooorm.com"
+  },
+  "bugs": {
+    "url": "https://github.com/unifiedjs/unified-stream/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Titus Wormer",
+      "email": "tituswormer@gmail.com",
+      "url": "https://wooorm.com"
+    }
+  ],
+  "dependencies": {
+    "once": "^1.4.0"
+  },
+  "deprecated": false,
+  "description": "Streaming interface for unified processors",
+  "devDependencies": {
+    "is-function": "^1.0.1",
+    "nyc": "^13.0.0",
+    "prettier": "^1.12.1",
+    "remark-cli": "^6.0.0",
+    "remark-preset-wooorm": "^4.0.0",
+    "tape": "^4.6.3",
+    "unified": "^7.0.0",
+    "xo": "^0.23.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "homepage": "https://github.com/unifiedjs/unified-stream#readme",
+  "keywords": [
+    "unified",
+    "stream"
+  ],
+  "license": "MIT",
+  "name": "unified-stream",
+  "nyc": {
+    "check-coverage": true,
+    "lines": 100,
+    "functions": 100,
+    "branches": 100
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "useTabs": false,
+    "singleQuote": true,
+    "bracketSpacing": false,
+    "semi": false,
+    "trailingComma": "none"
+  },
+  "remarkConfig": {
+    "plugins": [
+      "preset-wooorm"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unifiedjs/unified-stream.git"
+  },
+  "scripts": {
+    "format": "remark . -qfo && prettier --write '**/*.js' && xo --fix",
+    "test": "npm run format && npm run test-coverage",
+    "test-api": "node test",
+    "test-coverage": "nyc --reporter lcov tape test.js"
+  },
+  "version": "1.0.4",
+  "xo": {
+    "prettier": true,
+    "esnext": false,
+    "rules": {
+      "guard-for-in": "off",
+      "no-var": "off",
+      "prefer-arrow-callback": "off",
+      "unicorn/number-literal-case": "off"
+    }
+  }
+}
